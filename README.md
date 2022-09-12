@@ -5,6 +5,6 @@ Create an application in a programming language of your choice. The application 
 The solution was built with Java 17 + Spring Boot 2.7.3 and Gradle using a MVC pattern.
 
 ### Requirements
-Install Java 17.
-Install Git.
-Install Gradle.
+- Install Java 17.
+- Install Git.
+- Install Gradle.
