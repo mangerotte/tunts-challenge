@@ -8,3 +8,6 @@ The solution was built with Java 17 + Spring Boot 2.7.3 and Gradle using a MVC p
 - Install Java 17.
 - Install Git.
 - Install Gradle.
+
+##Link to spreadsheet
+  - https://docs.google.com/spreadsheets/d/1PMfEfSqKlvZ79pCJmCfBp7uWr5l87Ha99kovNF2alYM/edit#gid=0
