@@ -11,10 +11,10 @@ import java.util.List;
 @Slf4j
 @Service
 public class StudentService {
-    List<Student> students = new ArrayList<>();
-    List<List<Object>> listAllStudent = new ArrayList<>();
 
-    public List<Student> ParseJsonDataForStudent(ValueRange result) {
+
+    public List<Student> parseJsonDataForStudent(ValueRange result) {
+        List<Student> students = new ArrayList<>();
         log.info("Receiving data from the request and transforming it into an object");
         for (int i = 0; i < result.getValues().size(); i++) {
             students.add(new Student(
@@ -28,10 +28,11 @@ public class StudentService {
         return students;
     }
     public List<List<Object>> validationAndInsertListObject (ValueRange result) {
+        List<List<Object>> listAllStudent = new ArrayList<>();
         double reproveNote = 50;
         double approve = 70;
         log.info("Analyzing data and changing object variables");
-        for (Student student : ParseJsonDataForStudent(result)) {
+        for (Student student : parseJsonDataForStudent(result)) {
             if (student.failedForMiss()) {
                 student.setSituation("Reprovado");
                 student.setNoteApproval(0.0);

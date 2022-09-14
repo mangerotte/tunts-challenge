@@ -5,5 +5,4 @@ services:
     image: tunts:latest
     ports:
       - "8080:8080"
-    expose:
-      - "8888"
+      - "8888:8888"

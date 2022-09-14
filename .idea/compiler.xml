@@ -14,6 +14,7 @@
     <bytecodeTargetLevel>
       <module name="tuntschallenge.tuntschallenge.main" target="17" />
       <module name="tuntschallenge.tuntschallenge.test" target="17" />
+      <module name="tuntschallenge.tuntschallenge.test~1" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
